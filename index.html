@@ -2,132 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Life Coach - Transform Your Life</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    .btn {
-      background: white;
-      color: #2575fc;
-      padding: 0.75rem 1.5rem;
-      margin-top: 1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background: #e0e0e0;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #2575fc;
-    }
-    ul li {
-      margin: 0.5rem 0;
-    }
-    blockquote {
-      font-style: italic;
-      color: #444;
-      margin: 1rem 0;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    form button {
-      background: #2575fc;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    .fade-in {
-      animation: fadeIn 1s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <header>
     <h1>Unlock Your Full Potential</h1>
-    <p>One conversation can change your direction. Let’s talk.</p>
-    <a href="#contact" class="btn">Book Your Free Discovery Call</a>
+    <p>Start your transformation journey today with expert life coaching.</p>
+    <a href="#contact" class="btn">Book a Free Session</a>
   </header>
 
-  <section id="about" class="fade-in">
-    <h2>Why Work With Me?</h2>
-    <p>I’m a certified life coach with over 5 years of experience helping professionals and entrepreneurs overcome self-doubt, unlock confidence, and take powerful action toward their goals.</p>
-    <p>My proven coaching framework has helped 300+ clients achieve clarity, balance, and real results.</p>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a certified life coach helping ambitious individuals break through barriers and achieve success.</p>
   </section>
 
-  <section id="services" class="fade-in">
-    <h2>Services Tailored For You</h2>
+  <section id="services">
+    <h2>Services</h2>
     <ul>
-      <li><strong>1-on-1 Personalized Coaching</strong> – Weekly clarity calls & goal reviews</li>
-      <li><strong>Career Transformation</strong> – Find purpose & unlock leadership</li>
-      <li><strong>Confidence Accelerator</strong> – Eliminate self-doubt</li>
-      <li><strong>Growth Strategy</strong> – Clear roadmap to your 6-month goals</li>
+      <li>1-on-1 Coaching</li>
+      <li>Career Guidance</li>
+      <li>Confidence Building</li>
+      <li>Goal Setting and Strategy</li>
     </ul>
   </section>
 
-  <section id="testimonials" class="fade-in">
-    <h2>What Clients Are Saying</h2>
-    <blockquote>"I started confused and stuck. Now I lead a team and feel unstoppable. Absolutely transformative experience!"</blockquote>
-    <cite>- Priya S., Team Lead, Bengaluru</cite>
-    <blockquote>"Best investment in myself. The progress I made in 3 months was beyond what I achieved in the last 3 years."</blockquote>
-    <cite>- Aman R., Startup Founder</cite>
+  <section id="testimonials">
+    <h2>Client Success</h2>
+    <blockquote>"My mindset has completely shifted! Highly recommend."</blockquote>
+    <cite>- A Happy Client</cite>
   </section>
 
-  <section id="contact" class="fade-in">
-    <h2>Let’s Connect</h2>
-    <p>Fill the form below and I’ll personally get back to you within 24 hours.</p>
-    <form method="POST" action="https://formspree.io/f/xblgqjpd">
-      <input type="text" name="name" placeholder="Your Full Name" required>
-      <input type="email" name="email" placeholder="Your Email Address" required>
-      <textarea name="message" placeholder="Tell me what you're looking for" required></textarea>
-      <button type="submit">Submit</button>
+  <section id="contact">
+    <h2>Book Your Free Session</h2>
+    <form method="POST" action="https://formspree.io/f/xblgqjpd" target="_blank">
+      <div class="form-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Your Full Name" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-calendar-alt"></i>
+        <input type="date" name="preferred_date" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-clock"></i>
+        <input type="time" name="preferred_time" required>
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-comment"></i>
+        <textarea name="message" placeholder="Tell me what you're looking for" required></textarea>
+      </div>
+
+      <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Book Session</button>
     </form>
+
+    <!-- Optional: Add to calendar -->
+    <p style="text-align:center; margin-top:10px;">
+      <a href="https://calendar.google.com/calendar/r/eventedit" target="_blank">Add to Google Calendar</a>
+    </p>
+  </section>
+
+  <!-- Placeholder Chatbot Section -->
+  <section id="chatbot">
+    <h2>Need Help?</h2>
+    <p>Chatbot feature coming soon!</p>
   </section>
 
   <footer>
-    <p>© 2025 Life Coach | Your Growth Partner | <a href="#contact" style="color:#ccc;">Let's Talk</a></p>
+    <p>© 2025 Life Coach | Empowering Your Journey</p>
   </footer>
 
 </body>
